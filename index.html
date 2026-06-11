@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KP-markt — Kseniya Pavlova</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .logo-font { font-family: 'Playfair Display', serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://picsum.photos/id/1015/2000/1200');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="#" class="flex items-center">
+                    <img src="https://i.imgur.com/placeholder-kp.png" alt="KP-markt" class="h-12">
+                </a>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#" class="hover:text-pink-600 transition">Каталог</a>
+                <a href="#" class="hover:text-pink-600 transition">Акции</a>
+                <a href="#" class="hover:text-pink-600 transition">Lookbook</a>
+                <a href="#" class="hover:text-pink-600 transition">Блог</a>
+                <a href="#" class="hover:text-pink-600 transition">О магазине</a>
+            </nav>
+            <div class="flex items-center gap-6">
+                <div class="relative">
+                    <input type="text" placeholder="Поиск..." class="pl-10 pr-4 py-2 border border-gray-300 rounded-full w-72 focus:outline-none focus:border-pink-500">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-3 text-gray-400"></i>
+                </div>
+                <button class="hover:text-pink-600"><i class="fa-solid fa-heart text-xl"></i></button>
+                <button class="hover:text-pink-600 relative"><i class="fa-solid fa-shopping-bag text-xl"></i><span class="absolute -top-1 -right-1 bg-pink-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span></button>
+                <button class="hover:text-pink-600"><i class="fa-solid fa-user text-xl"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero-bg h-screen flex items-center text-white relative">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-6 py-2 rounded-full mb-6">
+                <span class="text-pink-300">✦</span>
+                <span class="uppercase tracking-widest text-sm">Новая коллекция</span>
+            </div>
+            <h1 class="text-7xl md:text-8xl logo-font font-bold tracking-tighter mb-4">KP-markt</h1>
+            <p class="text-2xl mb-8 max-w-md mx-auto">Роскошная женская мода от Kseniya Pavlova</p>
+            <a href="#catalog" class="inline-block bg-white text-black px-10 py-4 rounded-full font-medium hover:bg-pink-100 transition text-lg">Смотреть каталог</a>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">
+            <div class="text-xs tracking-widest mb-2">ПРОКРУТИТЕ</div>
+            <i class="fa-solid fa-chevron-down animate-bounce"></i>
+        </div>
+    </section>
+
+    <!-- Quick Categories -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <h2 class="text-4xl font-semibold text-center mb-12">Выберите категорию</h2>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+            <a href="#" class="group relative aspect-square overflow-hidden rounded-3xl">
+                <img src="https://picsum.photos/id/1015/600/600" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-8">
+                    <p class="text-white text-2xl font-medium">Платья</p>
+                </div>
+            </a>
+            <!-- More categories -->
+            <a href="#" class="group relative aspect-square overflow-hidden rounded-3xl">
+                <img src="https://picsum.photos/id/201/600/600" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-8">
+                    <p class="text-white text-2xl font-medium">Обувь</p>
+                </div>
+            </a>
+            <a href="#" class="group relative aspect-square overflow-hidden rounded-3xl">
+                <img src="https://picsum.photos/id/106/600/600" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-8">
+                    <p class="text-white text-2xl font-medium">Сумки</p>
+                </div>
+            </a>
+            <a href="#" class="group relative aspect-square overflow-hidden rounded-3xl">
+                <img src="https://picsum.photos/id/133/600/600" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-8">
+                    <p class="text-white text-2xl font-medium">Аксессуары</p>
+                </div>
+            </a>
+            <a href="#" class="group relative aspect-square overflow-hidden rounded-3xl">
+                <img src="https://picsum.photos/id/201/600/600" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-8">
+                    <p class="text-white text-2xl font-medium">Косметика</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Новинки -->
+    <section id="catalog" class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="text-4xl font-semibold">Новинки</h2>
+                <a href="#" class="text-pink-600 hover:underline">Все новинки →</a>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Product cards -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-3xl mb-4">
+                        <img src="https://picsum.photos/id/1015/600/800" class="w-full aspect-[4/5] object-cover group-hover:scale-105 transition">
+                        <div class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-xs font-medium">NEW</div>
+                    </div>
+                    <h3 class="font-medium">Розовые туфли на шпильке</h3>
+                    <p class="text-gray-500 text-sm">Kseniya Pavlova</p>
+                    <p class="font-semibold mt-1">12 990 ₽</p>
+                </div>
+                <!-- Repeat more cards -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-3xl mb-4">
+                        <img src="https://picsum.photos/id/180/600/800" class="w-full aspect-[4/5] object-cover group-hover:scale-105 transition">
+                    </div>
+                    <h3 class="font-medium">Чёрные очки</h3>
+                    <p class="text-gray-500 text-sm">Kseniya Pavlova</p>
+                    <p class="font-semibold mt-1">4 990 ₽</p>
+                </div>
+                <!-- Add 6-8 cards for fullness -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12">
+            <div>
+                <h3 class="logo-font text-3xl mb-4">KP-markt</h3>
+                <p class="text-gray-400">Роскошь в каждом образе</p>
+            </div>
+            <!-- More footer columns -->
+        </div>
+    </footer>
+</body>
+</html>
